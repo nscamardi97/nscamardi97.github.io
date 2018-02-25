@@ -36,7 +36,7 @@ var colors = [
     [121,0,220], // 7 - Purple
 ];
 
-var currentColor = 7;
+var currentColor = 6;
 
 function note_on(note, velocity) {
     console.log("noteon sent");
@@ -69,10 +69,10 @@ window.onkeydown = function(event) {
 
     // Change color
     if (key == 'c') {
-        if (currentColor < 7) {
+        if (currentColor < 6) {
             currentColor++
-        } if (currentColor >= 7) {
-            currentColor = 1
+        } if (currentColor >= 6) {
+            currentColor = 0
         }
         document.getElementById("piano").style.background = "rgba("+colors[currentColor][0]+", "+colors[currentColor][1]+", "+colors[currentColor][2]+", 1)";
     }
