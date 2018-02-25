@@ -288,6 +288,10 @@ h1 {
 }
 
 
+li{
+    list-style : none;
+}
+
 .piano {
   text-align: center;
   margin: 15px 0;
