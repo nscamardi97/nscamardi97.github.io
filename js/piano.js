@@ -49,6 +49,10 @@ function note_on(note, velocity) {
 
     xhttp.open("GET", "on/" + note + "/" + velocity, true);
     xhttp.send();
+
+    var key = document.getElementById("key_" + (note - octave));
+    console.log(key);
+    key.style.background_color = "#FFFF00";
 }
 
 function note_off(note) {
@@ -62,6 +66,10 @@ function note_off(note) {
 
     xhttp.open("GET", "off/" + note, true);
     xhttp.send();
+
+    var key = document.getElementById("key_" + (note - octave));
+    console.log(key);
+    key.style.background_color = "#000000";
 }
 
 for (var i = 0; i < 17; i++) {
