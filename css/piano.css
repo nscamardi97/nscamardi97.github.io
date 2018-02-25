@@ -1,9 +1,12 @@
 html,body,div,span,h1,h2,a,p{margin:0;padding:0;}
 
 html {
+    
     background: #555;
     font: normal 14px/24px futura, futura, futura, futura;
     color: #993;
+ 
+
 }
 
 strong { font-weight: normal; }
@@ -474,3 +477,4 @@ inset 1px 1px 0 rgba(255,255,255, .4);
   box-shadow: black 0px 2px 2px 0px;
   background: #191919;
 }
+
