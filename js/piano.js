@@ -59,3 +59,8 @@ window.onkeyup = function(event) {
         xhttp.send();
     }
 };
+
+document.getElementById("test").onmousedown = function(event)
+{
+  document.getElementById("test").style.display = 'block';
+};
