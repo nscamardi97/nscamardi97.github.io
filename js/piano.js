@@ -75,3 +75,15 @@ document.getElementById("test").onmousedown = function(event)
   toggleHelp = true;
   }
 };
+
+document.getElementById("goUp").onmousedown = function (event) {
+    
+        octave = octave + 12;
+    
+};
+
+document.getElementById("goDown").onmousedown = function (event) {
+
+    octave = octave - 12;
+
+};
