@@ -81,18 +81,6 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(content)
 
 
-        if parts[1] == "js":
-            filename = parts[2]
-            file = open(filename, 'r')
-            content = file.read()
-            self.wfile.write(content)
-        if parts[1] == "js":
-            filename = parts[2]
-            file = open(filename, 'r')
-            content = file.read()
-            self.wfile.write(content)
-
-
         if parts[1] == "on":
             print("Note on!")
             note = int(parts[2])
