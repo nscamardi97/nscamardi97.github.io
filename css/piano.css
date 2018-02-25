@@ -124,13 +124,13 @@ a:hover {
 }
 
 .previous {
-    background-color: #4CAF50;
-    color: black;
+    background-color: #000;
+    color: white;
 }
 
 .next {
-    background-color: #4CAF50;
-    color: black;
+    background-color: #000;
+    color: white;
 }
 
 .round {
