@@ -1,1 +1,12 @@
-f
+window.onkeydown = function()
+{myScript
+
+
+
+
+
+
+
+
+
+};
