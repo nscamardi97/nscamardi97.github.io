@@ -24,6 +24,8 @@ var octave = 60;
 
 var pressed_keys = [];
 
+var toggleHelp = false;
+
 window.onkeydown = function(event) {
     var key = event.key;
     if (pressed_keys.indexOf(key) == -1 && key in keys) {
@@ -62,5 +64,14 @@ window.onkeyup = function(event) {
 
 document.getElementById("test").onmousedown = function(event)
 {
+  if (toggleHelp)
+  {
+  document.getElementById("test2").style.display = 'none';
+  toggleHelp = false;
+  }
+  else
+  {
   document.getElementById("test2").style.display = 'block';
+  toggleHelp = true;
+  }
 };
