@@ -50,6 +50,7 @@
             var pressedTimeout;
             dataURI = null;
             function play(evt) {
+				console.log("playing");
                 // sound
                 sounds[curSound].pause();
                 try {
