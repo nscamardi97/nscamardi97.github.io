@@ -64,6 +64,22 @@ function note_off(note) {
     xhttp.send();
 }
 
+for (var i = 0; i < 17; i++) {
+    (function (i) {
+        document.getElementById("key_" + i).onmousedown = function(event) {
+            note = octave + i;
+            note_on(note, 100);
+        };
+    })(i);
+
+    (function (i) {
+        document.getElementById("key_" + i).onmouseup = function(event) {
+            note = octave + i;
+            note_off(note);
+        };
+    })(i);
+}
+
 window.onkeydown = function(event) {
     var key = event.key;
 
