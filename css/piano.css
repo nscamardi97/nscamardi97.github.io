@@ -191,7 +191,7 @@ a:hover {
     left: -716px;
     padding: 20px;
     width: 740px;
-    height: 142px;
+    height: 70px;
     line-height: 24px;
     color: #eee;
     background: rgba(0, 0, 0, .85);
@@ -443,12 +443,11 @@ inset 1px 1px 0 rgba(255,255,255, .4);
   cursor: pointer;
   background: #faf5ed;
 }
-.piano ul li .key:active {
-  background: #f6ecdd;
-  -moz-box-shadow: gray 0px 1px 3px -1px;
-  -webkit-box-shadow: gray 0px 1px 3px -1px;
-  box-shadow: gray 0px 1px 3px -1px;
+
+.piano ul li .key_active {
+    background: #ffff00 !important;
 }
+
 .piano ul li .upper-key {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
