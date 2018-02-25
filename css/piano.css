@@ -291,6 +291,20 @@ li{
   user-select: none;
   width: 100%;
 }
+
+.help-show:active
+{
+ box-shadow: 1px 1px 0 rgba(0, 0, 0, .35),
+1px 0 0 rgba(0, 0, 0, .35), 
+0 1px 0 rgba(0, 0, 0, .35), 
+inset 1px 1px 0 rgba(255,255,255, .4); 
+}
+
+.help-show:disabled
+{
+ box-shadow: none;
+}
+
 @media (min-width: 800px) {
   .piano ul li .key {
     width: 56px;
