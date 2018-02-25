@@ -185,7 +185,9 @@ a:hover {
 }
 
 .help.show .help-inner {
-    top: 55px;
+    position: fixed;
+    top: 400px;
+    left: 380px;
     padding: 20px;
     width: 740px;
     height: 142px;
