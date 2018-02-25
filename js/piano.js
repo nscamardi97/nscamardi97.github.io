@@ -96,26 +96,28 @@ window.onkeyup = function(event) {
 
 document.getElementById("test").onmousedown = function(event)
 {
-  if (toggleHelp)
-  {
-  document.getElementById("test2").style.display = 'none';
-  toggleHelp = false;
-  }
-  else
-  {
-  document.getElementById("test2").style.display = 'block';
-  toggleHelp = true;
-  }
+    if (toggleHelp)
+    {
+        document.getElementById("test2").style.display = 'none';
+        toggleHelp = false;
+    }
+    else
+    {
+        document.getElementById("test2").style.display = 'block';
+        toggleHelp = true;
+    }
 };
 
 document.getElementById("goUp").onmousedown = function (event) {
-    
-        octave = octave + 12;
-    
+
+    octave = octave + 12;
+    document.getElementById("octave").innerHTML = octave / 12;
+
 };
 
 document.getElementById("goDown").onmousedown = function (event) {
 
     octave = octave - 12;
+    document.getElementById("octave").innerHTML = octave / 12;
 
 };
