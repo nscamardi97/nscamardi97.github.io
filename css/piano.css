@@ -1,9 +1,11 @@
 html,body,div,span,h1,p{margin:0;padding:0;}
 
 html {
-    background: #555;
+    
     font: normal 14px/24px futura, futura, futura, futura;
     color: #993;
+    background-image: url("paper.gif");
+
 }
 
 strong { font-weight: normal; }
@@ -438,6 +440,3 @@ inset 1px 1px 0 rgba(255,255,255, .4);
   background: #191919;
 }
 
-body {
-    background-image: url("tim gayed.jpg");
-}
