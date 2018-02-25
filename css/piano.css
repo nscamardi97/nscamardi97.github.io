@@ -350,16 +350,16 @@ inset 1px 1px 0 rgba(255,255,255, .4);
     height: 84px;
     width: 22.4px;
   }
-  .piano ul li:nth-child(7n-6) .upper-key, .piano ul li:nth-child(7n-2) .upper-key {
+  .piano ul li:nth-child(7n-1) .upper-key, .piano ul li:nth-child(7n-5) .upper-key {
     left: 43.68px;
   }
-  .piano ul li:nth-child(7n-5) .upper-key {
+  .piano ul li:nth-child(7n-2) .upper-key {
     left: 47.04px;
   }
-  .piano ul li:nth-child(7n-4) .upper-key, .piano ul li:nth-child(7n-1) .upper-key {
+  .piano ul li:nth-child(7n-3) .upper-key, .piano ul li:nth-child(7n-6) .upper-key {
     left: 50.4px;
   }
-  .piano ul li:nth-child(7n - 3) .upper-key, .piano ul li:nth-child(7n) .upper-key {
+  .piano ul li:nth-child(7n - 4) .upper-key, .piano ul li:nth-child(7n) .upper-key {
     display: none;
   }
 }
