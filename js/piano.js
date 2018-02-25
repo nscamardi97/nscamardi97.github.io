@@ -31,7 +31,7 @@ window.onkeydown = function(event) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log("Request successfull");
+                console.log("keydown successfull");
             }
         };
 
@@ -49,11 +49,13 @@ window.onkeyup = function(event) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log("Request successfull");
+                console.log("keyup successfull");
             }
         };
 
-        xhttp.open("GET", "off/" + keys[key] + "/100", true);
+        note = octave + keys[key]
+
+        xhttp.open("GET", "off/" + note, true);
         xhttp.send();
     }
 };
