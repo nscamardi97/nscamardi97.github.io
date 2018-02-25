@@ -1,4 +1,4 @@
-html,body,div,span,h1,h2,p{margin:0;padding:0;}
+html,body,div,span,h1,h2,a,p{margin:0;padding:0;}
 
 html {
     background: #555;
@@ -110,6 +110,31 @@ h2 {
     line-height: 20px;
     color: #fff;
     text-shadow: -1px -1px 0 #000
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
 }
 
 
