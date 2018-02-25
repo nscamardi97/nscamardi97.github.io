@@ -117,7 +117,7 @@ h2 {
 a {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 6px 14px 0px 0px;
 }
 
 a:hover {
