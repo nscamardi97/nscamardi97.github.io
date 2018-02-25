@@ -2,11 +2,10 @@ html,body,div,span,h1,h2,a,p{margin:0;padding:0;}
 
 html {
     
-
+    background: #555;
+    color: #993;
     font: normal 14px/24px futura, futura, futura, futura;
-    background-image: url("tim gayed.jpg");
  
-
 }
 
 strong { font-weight: normal; }
