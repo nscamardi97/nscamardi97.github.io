@@ -25,10 +25,12 @@ var keys = {
 
 var octave = 60;
 
+var pressed_keys = [];
+
 window.onkeydown = function(event) {
     var key = event.key;
-    console.log(key);
-    if (key in keys) {
+    if (pressed_keys.indexOf(key) == -1 && key in keys) {
+        pressed_keys.push(key)
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -45,8 +47,8 @@ window.onkeydown = function(event) {
 
 window.onkeyup = function(event) {
     var key = event.key;
-    console.log(key);
     if (key in keys) {
+        pressed_keys.splice(pressed_keys.indexOf(key), 1);
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
