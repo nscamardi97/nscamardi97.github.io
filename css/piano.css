@@ -26,7 +26,7 @@ html, body { height: 100%; }
     margin: 0 auto;
     padding: 80px 40px 16px;
     width: 1000px;
-    background: #816400;
+    background: rgba(121, 0, 220, 0.76);
     border-radius: 20px;
     box-shadow: 0 1px 0 #999, 0 2px 0 #999, 0 3px 0 #999, 1px 4px 0 #999, 2px 5px 0 #999, 3px 6px 0 #999, 4px 7px 0 #999, 5px 8px 0 #999, 0 0 8px #000;
     z-index: 2;
@@ -93,9 +93,9 @@ html, body { height: 100%; }
 
 h1 {
     position: absolute;
-    top: 25px;
-    left: 40px;
-    font-size: 16px;
+    top: 40px;
+    left: 400px;
+    font-size: 70px;
     line-height: 20px;
     color: #fff;
     text-shadow: -1px -1px 0 #000
