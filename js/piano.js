@@ -136,5 +136,9 @@ document.getElementById("goDown").onmousedown = function (event) {
 
     octave = octave - 12;
     document.getElementById("octave").innerHTML = octave / 12;
+    if (octave <=0 )
+    {
+        octave = 12;
+    }
 
 };
