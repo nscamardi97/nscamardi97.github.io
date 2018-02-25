@@ -86,26 +86,26 @@ class RequestHandler(BaseHTTPRequestHandler):
             note = int(parts[2])
             velocity = int(parts[3])
             piano.note_on(note, velocity)
-            self.wfile.write("Note on " + note + " " + velocity)
+            self.wfile.write("Note on " + str(note) + " " + str(velocity))
 
         if parts[1] == "off":
             print("Note off!")
             note = int(parts[2])
             piano.note_off(note)
-            self.wfile.write("Note off " + note)
+            self.wfile.write("Note off " + str(note))
 
         if parts[1] == "patch":
             print("Patch!")
             patch = int(parts[2]) - 1
             piano.select_patch(patch)
-            self.wfile.write("Patch " + patch)
+            self.wfile.write("Patch " + str(patch))
 
         return
 
 def run():
     print("Starting server")
 
-    server_address = ("127.0.0.1", 8080)
+    server_address = ("0.0.0.0", 8080)
     httpd = HTTPServer(server_address, RequestHandler)
     print("running server")
 
