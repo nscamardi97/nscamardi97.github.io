@@ -5,9 +5,9 @@
 html,body,div,span,h1,p{margin:0;padding:0;}
 
 html {
-    background: #fff;
+    background: #504b4b;
     font: normal 14px/24px futura, Helvetica, Arial, sans serif;
-    color: #333;
+    color: #999;
 }
 
 strong { font-weight: normal; }
