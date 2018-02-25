@@ -26,6 +26,18 @@ var pressed_keys = [];
 
 var toggleHelp = false;
 
+var colors = {
+	{0,0,0}, // 1 - Black
+	{250,0,0}, // 2 - Red
+	{250,135,0}, // 3 - Orange
+	{250,250,0}, // 4 - Yellow
+	{0,250,0}, // 5 - Green
+	{0,0,250}, // 6 - Blue
+	{121,0,220}, // 7 - Purple
+}
+
+var currentColor = 7
+
 window.onkeydown = function(event) {
     var key = event.key;
     if (pressed_keys.indexOf(key) == -1 && key in keys) {
@@ -36,6 +48,9 @@ window.onkeydown = function(event) {
                 console.log("keydown successfull");
             }
         };
+if (key == 'c') {
+
+}
 
         note = octave + keys[key]
 
