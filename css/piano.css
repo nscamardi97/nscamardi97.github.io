@@ -93,9 +93,9 @@ html, body { height: 100%; }
 
 h1 {
     position: absolute;
-    top: 25px;
-    left: 40px;
-    font-size: 16px;
+    top: 40px;
+    left: 400px;
+    font-size: 70px;
     line-height: 20px;
     color: #fff;
     text-shadow: -1px -1px 0 #000
@@ -136,7 +136,6 @@ h2 {
 
 .loop.active,
 .loop:active,
-.help.show,
 .help:active {
     box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .35);
 }
