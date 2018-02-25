@@ -60,7 +60,7 @@ window.onkeyup = function(event) {
     }
 };
 
-document.getElementById("test").onmousedown = function(event)
+document.getElementById("test2").onmousedown = function(event)
 {
-  document.getElementById("test").style.display = 'block';
+  document.getElementById("test2").style.display = 'block';
 };
