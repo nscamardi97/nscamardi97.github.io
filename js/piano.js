@@ -71,7 +71,8 @@ window.onkeydown = function(event) {
     if (key == 'c') {
         if (currentColor < 6) {
             currentColor++
-        } if (currentColor >= 6) {
+        } 
+	elseif (currentColor >= 6) {
             currentColor = 0
         }
         document.getElementById("piano").style.background = "rgba("+colors[currentColor][0]+", "+colors[currentColor][1]+", "+colors[currentColor][2]+", 1)";
